@@ -1,0 +1,9 @@
+Web APIs:
+document object
+window object 
+----
+node APIs:
+process object
+globle object
+====
+node js is a implementation of chrome v8 engin to run javascript but alot of additional functionalities.

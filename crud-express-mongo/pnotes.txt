@@ -1,0 +1,114 @@
+node -v if return something you all good
+first run 
+npm init 
+that create a package.json file in a directory 
+
+create a file for testing purpose
+echo. > server.js
+put log there and run node server.js 
+
+then run
+npn install express --save
+to install express and --save flag saves express as a dependency in package.json
+It’s important to know these dependencies because npm can retrieve dependencies with another npm install command when you need it later.
+
+now require express in server
+
+npm install nodemon --save-dev
+nodemon ./server.js localhost 8080
+nodemon --inspect ./server.js 80
+
+Browsers can only perform a CREATE operation if they send POST request to the server. 
+This POST request can be triggered through JavaScript or through a <form> element.
+
+Express doesn’t handle reading data from the <form> element on it’s own.
+ We have to add another package called body-parser to gain this functionality.
+
+ npm install body-parser --save
+
+ Body-parser is a middleware. They help to tidy up the request object before we use them. Express lets us use middleware with the use method.
+ now require body-parser
+
+ npm install mongodb --save
+Mongoose (which is a framework for MongoDB) 
+https://zellwk.com/blog/crud-express-mongodb/
+
+we are getting our records 
+now its time to show them 
+Popular template engines include Pug, Embedded JavaScript, and Nunjucks
+
+We will also create an external JavaScript file to execute a PUT request. According to Express conventions, this JavaScript is kept in a folder called public
+
+===============
+// https://api.uptimerobot.com/v2/methodName?api_key=YOUR_API_KEY_HERE
+readOnly api
+ur1025953-952a3c430f7acfbbc45612e2
+main api
+u1025953-9ac1ca1b818d21f08d7d76d3
+
+curl --header "Content-Type: application/json" -d "{\"api_key\":\"u1025953-9ac1ca1b818d21f08d7d76d3\"}" https://api.uptimerobot.com/v2/getAlertContacts
+
+bugsnag Bugsnag provides error reporting libraries which automatically detect and report errors in your applications, and capture diagnostic data required to help you reproduce and fix each error.Errors captured by our reporting libraries are sent to your Bugsnag dashboard in real-time,
+
+Axios is a very popular JavaScript library you can use to perform HTTP requests, that works in both Browser and Node.js platforms
+
+cd wget http://ftp.ruby-lang.org/pub/ruby/2.7/ruby-2.7.1.tar.gz tar -xzvf ruby-2.7.1.tar.gz
+
+[
+  npm init -y
+  npm i -g express-generator
+  express --no-view -h
+  express --no-view --git
+  npm i -g yarn
+  npm i -g npm@latest
+  yarn global add npm
+
+  nvm install 12.16.3
+  nvm alias default 12.16.3
+
+  yarn install
+  yarn start  
+]
+https://app.codility.com/demo/results/demoD9QAPS-YS5/
+def solution(a)
+  # write your code in Ruby 2.2
+  
+  maxi = a.max
+  return 1 if maxi <= 0
+  mini = a.min
+  mini = mini <= 0 ? 1 : mini
+  (mini..maxi).each do |num|
+    return num if !a.include?(num)
+  end
+  return maxi + 1  
+end
+
+https://app.codility.com/demo/results/demoXVQWFR-B85/
+def solution(a)
+  # write your code in Ruby 2.2
+  maxi = a.max
+  return 1 if maxi <= 0
+  (1..maxi).each do |num|
+    return num if !a.include?(num)
+  end
+  return maxi+1
+end
+
+Task Score 
+70% 
+Correctness 
+100% 
+Performance 
+25% 
+
+def solution(a)
+  # write your code in Ruby 2.2
+  mini = a.min
+  maxi = a.max
+  return 1 if maxi <= 0
+  mini = mini  > 1 ? mini : 1
+  (mini..maxi).each do |num|
+    return num if !a.include?(num)
+  end
+  return maxi+1
+end
